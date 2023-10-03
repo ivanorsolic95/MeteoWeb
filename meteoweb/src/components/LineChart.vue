@@ -83,10 +83,10 @@ export default {
 </script>
 
 <style scoped>
-.chart-container {
-  width: 33%; /* Adjust this value according to your design preference */
+  .chart-container {
+  width: 66%;
   position: relative;
-  margin: auto; /* Centers the chart container */
+  margin: auto; 
 }
 </style>
 
