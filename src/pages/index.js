@@ -1,7 +1,7 @@
 import * as React from "react"
 import NavBar from "../components/NavBar"
 
-const mainHeader = "Build your own station!"
+const mainHeader = "Build your own weather station!"
 
 const IndexPage = () => {
   return (
