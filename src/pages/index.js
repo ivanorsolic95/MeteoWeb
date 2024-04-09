@@ -3,7 +3,9 @@ import NavBar from "../components/NavBar"
 
 const IndexPage = () => {
   return (
-    <NavBar></NavBar>
+    <body>
+      <NavBar></NavBar>
+    </body>
   )
 }
 
