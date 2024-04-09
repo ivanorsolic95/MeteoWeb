@@ -8,7 +8,7 @@ const IndexPage = () => {
     <body>
       <NavBar></NavBar>
       <div id="body">
-        <h1>{mainHeader}</h1>
+        <h1 id="main-heading">{mainHeader}</h1>
       </div>
     </body>
   )
