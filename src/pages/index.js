@@ -11,6 +11,10 @@ const IndexPage = () => {
       <NavBar></NavBar>
       <div id="body">
         <h1 id="main-heading">{mainHeader}</h1>
+        <p className="text">
+          I've made a tutorial on how to make a simple weather station able to measure temperature, humidity, air pressure, and air quality.<br/>
+          This tutorial is aimed at anyone who has a basic knowledge of programming and is willing to learn how to make their own things using hardware components such as the microcontroller and the sensors.
+        </p>
         <InfoCallout infoText={infoText}></InfoCallout>
       </div>
     </body>
