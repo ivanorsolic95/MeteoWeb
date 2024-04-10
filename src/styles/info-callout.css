@@ -1,0 +1,35 @@
+.info-callout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    border-radius: 5px;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.info-notice {
+    display: flex;
+    padding: 0.625rem 0.313rem;
+    background-color: #FC6736;
+}
+
+.notice-text {
+    font-size: 1.125rem;
+    color: #EEEDEB;
+    line-height: 1;
+}
+  
+.fa-circle-info {
+    font-size: 1.125rem;
+    margin-right: 0.625rem;
+    color: #E0CCBE;
+}
+  
+.info-text {
+    background-color: #FFE4C9;
+    padding: 0.625rem 0.313rem;
+    color: #607274;
+    flex-grow: 1;
+    font-size: 1.125rem;
+}
