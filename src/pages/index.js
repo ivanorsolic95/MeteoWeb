@@ -1,6 +1,7 @@
 import * as React from "react"
 import NavBar from "../components/NavBar"
 import InfoCallout from "../components/InfoCallout"
+import WeatherStation from '../images/weatherstation.jpg'
 
 const mainHeader = "Build your own weather station!"
 const infoText = "Don't worry, I will explain what the microcontroller is, why you need it, what type of sensors you need, and where to buy them."
@@ -16,6 +17,7 @@ const IndexPage = () => {
           This tutorial is aimed at anyone who has a basic knowledge of programming and is willing to learn how to make their own things using hardware components such as the microcontroller and the sensors.
         </p>
         <InfoCallout infoText={infoText}></InfoCallout>
+        <img loading="lazy" alt="A weather station" src={WeatherStation}/>
       </div>
     </body>
   )
