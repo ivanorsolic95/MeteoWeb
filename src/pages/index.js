@@ -2,6 +2,7 @@ import * as React from "react"
 import NavBar from "../components/NavBar"
 import InfoCallout from "../components/InfoCallout"
 import WeatherStation from '../images/weatherstation.jpg'
+import Footer from "../components/Footer"
 
 const mainHeader = "Build your own weather station!"
 const infoText = "Don't worry, I will explain what the microcontroller is, why you need it, what type of sensors you need, and where to buy them."
@@ -19,6 +20,7 @@ const IndexPage = () => {
         <InfoCallout infoText={infoText}></InfoCallout>
         <img loading="lazy" alt="A weather station" src={WeatherStation}/>
       </div>
+      <Footer></Footer>
     </body>
   )
 }
