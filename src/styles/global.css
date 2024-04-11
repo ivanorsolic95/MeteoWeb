@@ -45,3 +45,8 @@ a:hover {
     color: #3b6978;
     text-decoration: none;
 }
+
+#list {
+    padding-left: 1rem;
+    list-style: inside;
+}
