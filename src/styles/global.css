@@ -29,3 +29,19 @@
     padding: 3rem 6rem;
     margin-left: 18.75rem;
 }
+
+h2 {
+    margin: 1rem auto;
+    color: #607274;
+    font-size: clamp(1.25rem, 2vw, 1.875rem); 
+}
+
+a {
+    text-decoration: underline;
+    color: #3b9c9f; 
+}
+
+a:hover {
+    color: #3b6978;
+    text-decoration: none;
+}
