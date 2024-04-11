@@ -1,0 +1,17 @@
+#components-table {
+    color: #607274;
+    background-color: #E0CCBE;
+    border-collapse: collapse;
+    width: 25rem;
+    height: 25rem;
+}
+
+#components-table td, #components-table th {
+    border: 1px solid #3C3633;
+    padding: 0.5rem
+}
+
+#list {
+    padding-left: 1rem;
+    list-style: inside;
+}
