@@ -1,0 +1,34 @@
+.alert-callout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.alert-notice {
+    display: flex;
+    padding: 0.625rem 0.313rem;
+    background-color: #FFDB58;
+}
+
+.alert-text {
+    font-size: 1.125rem;
+    color: #607274;
+    line-height: 1;
+}
+
+.alert-callout-text {
+    background-color: #FFE4C9;
+    padding: 0.625rem 0.313rem;
+    color: #607274;
+    flex-grow: 1;
+    font-size: 1.125rem;
+}
+
+.fa-triangle-exclamation {
+    font-size: 1.125rem;
+    margin-right: 0.625rem;
+    color: #DAA520;
+}
