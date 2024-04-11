@@ -27,7 +27,7 @@ const NavBar = () => {
                           <Link to='/hardware/' className="nav-link">Hardware</Link>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link" href="#">Configuration</a>
+                          <Link to='/configuration/' className="nav-link">Configuration</Link>
                       </li>
                       <li className="nav-item">
                           <a className="nav-link" href="#">Tools</a>
