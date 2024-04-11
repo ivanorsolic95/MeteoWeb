@@ -22,3 +22,10 @@
     font-size: clamp(1rem, 2vw, 1.125rem);
     color: #607274;
 }
+
+.footer {
+    text-align: center;
+    background-color: #EBE3D5;
+    padding: 3rem 6rem;
+    margin-left: 18.75rem;
+}
