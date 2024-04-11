@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../styles/navbar.css'
+import { Link } from 'gatsby';
 
 const NavBar = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -14,7 +15,7 @@ const NavBar = () => {
 
         handleResize();
 
-        return () => window.removeEventListenerEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     return (
@@ -23,7 +24,7 @@ const NavBar = () => {
              <div className="navbar-grid-container">
                   <ul class="nav flex-column">
                       <li className="nav-item">
-                          <a className="nav-link" href="#">Hardware</a>
+                          <Link to='/hardware/' className="nav-link">Hardware</Link>
                       </li>
                       <li className="nav-item">
                           <a className="nav-link" href="#">Configuration</a>
