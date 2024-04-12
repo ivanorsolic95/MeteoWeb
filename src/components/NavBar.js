@@ -30,7 +30,7 @@ const NavBar = () => {
                           <Link to='/configuration/' className="nav-link">Configuration</Link>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link" href="#">Tools</a>
+                          <Link to='/tools/' className="nav-link">Tools</Link>
                       </li>
                       <li className="nav-item">
                           <a className="nav-link" href="#">OLED</a>
