@@ -50,3 +50,19 @@ a:hover {
     padding-left: 1rem;
     list-style: inside;
 }
+
+pre {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    padding: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 1.25rem 0;
+}
+
+code {
+    color: #333;
+}
