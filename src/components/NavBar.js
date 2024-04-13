@@ -36,7 +36,7 @@ const NavBar = () => {
                           <Link to='/oled/' className="nav-link">OLED</Link>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link" href="#">DHT11</a>
+                          <Link to='/dht11/' className="nav-link">DHT11</Link>
                       </li>
                       <li className="nav-item">
                           <a className="nav-link" href="#">BMP180</a>
