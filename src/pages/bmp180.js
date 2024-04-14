@@ -68,3 +68,5 @@ const Bmp180 = () => {
 };
 
 export default Bmp180;
+
+export const Head = () => <title>BMP180</title>
