@@ -1,4 +1,5 @@
 import React from "react"
+import '../styles/footer.css'
 
 const navigation = {
     social: [
@@ -56,7 +57,7 @@ const navigation = {
     return (
       <footer className="footer">
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-          <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+          <nav className="-mb-6 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
             <div className="pb-6">
                 <p className="text">Hello, my name is Ivan and I made this tutorial to help you build your own weather station. If you have any question, feel free to ping me.</p>
             </div>
