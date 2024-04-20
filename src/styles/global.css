@@ -67,3 +67,8 @@ pre {
 code {
     color: #333;
 }
+
+img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
