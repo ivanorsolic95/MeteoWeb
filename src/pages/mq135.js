@@ -4,8 +4,21 @@ import MQ135WiringSchema from "../images/MQ135wiringdiagram.jpg";
 import MQ135Lib from "../images/mq135lib.png";
 import InfoCallout from "../components/InfoCallout";
 import MQ135Testing from "../images/mq135testing.png"
+import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
+import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const Mq135 = () => {
+    const codeBlock = `from mq135 import MQ135 
+from machine import Pin 
+from dht import DHT11 
+mq135 = MQ135(Pin(36)) - #If you connected sensor’s AO pin with the different microcontroller’s ADC pin, change the number of pin inside the brackets with this pin.
+mq135.get_rzero() - #Call this function continuously for a couple of minutes to calibrate the sensor, otherwise it won't work properly.`;
+
+    const codeBlock1 = `dht_sensor = DHT11(Pin(18)) - #remember to which GPI pin of the microcontroller you connected DHT11’s DATA pin
+dht_sensor.measure()
+temperature, humidity = dht_sensor.temperature(), dht_sensor.humidity()
+mq135.get_corrected_ppm(temperature, humidity)`;
+
     return (
         <body>
             <NavBar/>
@@ -29,13 +42,11 @@ const Mq135 = () => {
                     <p>
                         In the terminal that is visible after the establishment of the connection, run the following commands:
                     </p>
-                    <pre><code>
-                        from mq135 import MQ135 
-                        from machine import Pin 
-                        from dht import DHT11 
-                        mq135 = MQ135(Pin(36)) - If you connected sensor’s AO pin with the different microcontroller’s ADC pin, change the number of pin inside the brackets with this pin.
-                        mq135.get_rzero() - Call this function continuously for a couple of minutes to calibrate the sensor, otherwise it won't work properly.
-                    </code></pre>
+           
+                    <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                        {codeBlock}
+                    </SyntaxHighlighter>
+
                     <p>
                         Open your library in the code editor, and write the last value obtained from the <i>get_rzero()</i> function in <a href="https://github.com/ivanorsolic95/MQ135/blob/master/mq135.py#L20">line 20</a> of the library, then save the change.
                     </p>
@@ -46,12 +57,11 @@ const Mq135 = () => {
                     <p>
                         To have a more precise measurement of the air quality, we will provide the temperature and the humidity, measured by the DHT11 sensor, to our air quality sensor.
                     </p>
-                    <pre><code>
-                    dht_sensor = DHT11(Pin(18)) - remember to which GPI pin of the microcontroller you connected DHT11’s DATA pin
-                    dht_sensor.measure()
-                    temperature, humidity = dht_sensor.temperature(), dht_sensor.humidity()
-                    mq135.get_corrected_ppm(temperature, humidity)
-                    </code></pre>
+              
+                    <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                        {codeBlock1}
+                    </SyntaxHighlighter>
+
                     <p>
                         After the  last command is run, in the next line you should see the number, which indicates the ppm of the CO2, measured in the air.
                     </p>
