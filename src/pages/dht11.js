@@ -6,8 +6,17 @@ import Breadboard1 from '../images/breadboard1.jpg'
 import Breadboard2 from '../images/breadboard2.jpg'
 import DHTWiringSchema from '../images/DHT11-schema.jpg'
 import DHTCodeTest from '../images/dht11codetesting.png'
+import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
+import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const Dht11 = () => {
+    const codeBlock = `import dht 
+import machine 
+d = dht.DHT11(machine.Pin(16)) #if you connected the sensor's DATA pin to another GPI pin, change 16 with the number of that pin
+d.measure() 
+d.temperature() #you should see the temperature as the output of this function
+d.humidity() #you should see the humidity as the output of this function `;
+
     return (
         <body>
             <NavBar/>
@@ -54,14 +63,11 @@ const Dht11 = () => {
 
                     <br/>To test if sensor is working, connect to the microcontroller and run the following commands in the terminal:
                 </p>
-                <pre><code>
-                    import dht 
-                    import machine 
-                    d = dht.DHT11(machine.Pin(16)) #if you connected the sensor's DATA pin to another GPI pin, change 16 with the number of that pin
-                    d.measure() 
-                    d.temperature() #you should see the temperature as the output of this function
-                    d.humidity() #you should see the humidity as the output of this function 
-                </code></pre>
+                
+                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                    {codeBlock}
+                </SyntaxHighlighter>
+                
                 <img src={DHTCodeTest} alt="Testing of DHT11"></img>
             </div>
         </body>
