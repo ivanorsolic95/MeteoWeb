@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import NavBar from "../components/NavBar";
 import MQ135WiringSchema from "../images/MQ135wiringdiagram.jpg";
 import MQ135Lib from "../images/mq135lib.png";
@@ -6,8 +6,14 @@ import InfoCallout from "../components/InfoCallout";
 import MQ135Testing from "../images/mq135testing.png"
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
+import mediumZoom from 'medium-zoom';
 
 const Mq135 = () => {
+    useEffect(() => {
+        const zoom = mediumZoom('[data-zoomable]', { margin: 0, scrollOffset: 0 });
+        return () => zoom.detach();
+      }, []);
+
     const codeBlock = `from mq135 import MQ135 
 from machine import Pin 
 from dht import DHT11 
@@ -29,12 +35,22 @@ mq135.get_corrected_ppm(temperature, humidity)`;
                     Connect the 5V (also called VCC) pin of the sensor with the 5V pin of the microcontroller, the GND pin with the GND pin, and the sensor’s AO pin (analog pin) with any of the <a href="https://cdn.shopifycdn.net/s/files/1/0617/7190/7253/files/lora_v1.0_600x600.jpg?v=1665387124">ESP32‘s</a> ADC pin (I used pin number 34).
                     <br/>You can see on the diagram below that I crossed one pin. That’s DO (digital pin), which you don’t need to wire to the microcontroller.
                 </p>
-                <img src={MQ135WiringSchema} alt="Wiring diagram of MQ135"></img>
+                <img 
+                    src={MQ135WiringSchema} 
+                    alt="Wiring diagram of MQ135"
+                    data-zoomable 
+                    style={{ cursor: 'zoom-in' }}           
+                />
                 <h2>Testing MQ135 sensor</h2>
                 <p class="text">
                     Download <a href="https://github.com/ivanorsolic95/MQ135">the library</a> for the sensor. Upload the library to the microcontroller via ampy.
                 </p>
-                <img src={MQ135Lib} alt="MQ135 lib"></img>
+                <img 
+                    src={MQ135Lib} 
+                    alt="MQ135 lib"
+                    data-zoomable 
+                    style={{ cursor: 'zoom-in' }}           
+                />
                 <section class="text">
                     <p>
                         When you’re done with the uploading of the library, close the terminal, and connect to the microcontroller via MobaXTerm, as we’ve done earlier.
@@ -69,7 +85,12 @@ mq135.get_corrected_ppm(temperature, humidity)`;
                 <InfoCallout
                  infoText={'PPM stands for "parts per million." It is a way to measure how much of one substance is mixed into another. In the context of air particles, PPM tells us how many tiny particles, like dust, pollutants, or gases, are present in every million air particle. <br/>PPM helps us understand how clean or polluted the air is. Higher PPM means more particles are floating around, which could be harmful to breathe.'}
                 />
-                <img src={MQ135Testing} alt="MQ135 testing"></img>
+                <img 
+                    src={MQ135Testing} 
+                    alt="MQ135 testing"
+                    data-zoomable 
+                    style={{ cursor: 'zoom-in' }}           
+                />
             </div>
         </body>
     );

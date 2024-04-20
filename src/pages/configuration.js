@@ -1,14 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import NavBar from "../components/NavBar";
 import InfoCallout from "../components/InfoCallout";
 import TipCallout from "../components/TipCallout";
 import AlertCallout from "../components/AlertCallout";
 import DeviceManager from "../images/devicemanager.png"
 import PortProperties from "../images/portproperties.png"
-import Port from "../images/port.jpg"  
+import Port from "../images/port.jpg"
+import mediumZoom from 'medium-zoom';
 
 const Configuration = () => {
-
+    useEffect(() => {
+        const zoom = mediumZoom('[data-zoomable]', { margin: 0, scrollOffset: 0 });
+        return () => zoom.detach();
+      }, []);
+    
     return (
         <body>
             <NavBar/>
@@ -29,11 +34,23 @@ const Configuration = () => {
                 <p class="text">
                     Open Device Manager: Search bar → type “Device Manager” → click on the “Device Manager” app.
                 </p>
-                <img loading="lazy" src={DeviceManager} alt="Device Manager"></img>
+                <img 
+                    loading="lazy" 
+                    src={DeviceManager} 
+                    alt="Device Manager"
+                    data-zoomable 
+                    style={{ cursor: 'zoom-in' }}           
+                />
                 <p class="text">
                     Under the section Ports (COM & LPT), you should see your microcontroller. My microcontroller was under the name “<b>Silicon Labs CP210x USB to UART Bridge (COM 5)</b>”.
                 </p>        
-                <img loading="lazy" src={Port} alt="Port in Device Manager"></img>
+                <img 
+                    loading="lazy" 
+                    src={Port} 
+                    alt="Port in Device Manager"
+                    data-zoomable 
+                    style={{ cursor: 'zoom-in' }}           
+                />
                 <TipCallout tipText={'If you don’t know which device is your microcontroller, just unplug it,  plug it in again, and pay attention to which device reappears after plugging in!'}/>
                 <p class="text">
                     Notice that it says “(COM5)”  to the right of my microcontroller’s name. This is the COM port I used to establish a serial connection between it and my computer.
@@ -42,7 +59,13 @@ const Configuration = () => {
                 <p class="text">
                     To fix this problem, search for the drivers for your microcontroller on the Internet using the device name or the hardware ID of the device, and install them.
                 </p>
-                <img loading="lazy" src={PortProperties} alt="Port property"></img>
+                <img 
+                    loading="lazy" 
+                    src={PortProperties} 
+                    alt="Port property"
+                    data-zoomable 
+                    style={{ cursor: 'zoom-in' }}           
+                />
                 <p class="text">
                     I found the drivers for my microcontroller by copying the hardware ID from Device Manager and Googleing it. The first result was <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads">this page</a>. If you’re using an ESP32 like me, you can just do the following:
                 </p>

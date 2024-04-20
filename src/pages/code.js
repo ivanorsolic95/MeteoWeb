@@ -1,12 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import NavBar from "../components/NavBar";
 import TipCallout from "../components/TipCallout";
 import InfoCallout from "../components/InfoCallout";
 import WeatherStation from "../images/weatherstationinwork.png";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
+import mediumZoom from 'medium-zoom';
+
 
 const Code = () => {
+    useEffect(() => {
+        const zoom = mediumZoom('[data-zoomable]', { margin: 0, scrollOffset: 0 });
+        return () => zoom.detach();
+      }, []);
+
     const codeString =`import time
 import network
 import ntptime
@@ -524,7 +531,12 @@ self.setResetPin()`;
                     <i><b>Now your weather station works automatically and you can leave it plugged into your laptop/PC, to do its job!</b></i>
                 </p>
     
-                <img src={WeatherStation} alt="Weather station in work"></img>
+                <img 
+                    src={WeatherStation} 
+                    alt="Weather station in work"
+                    data-zoomable 
+                    style={{ cursor: 'zoom-in' }}           
+                />
         
             </div>  
         </body>
