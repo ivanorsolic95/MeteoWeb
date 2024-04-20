@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/info-callout.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
-import DOMPurify from 'dompurify';
+import DOMPurify from 'isomorphic-dompurify';
 
 const InfoCallout = ({ infoText }) => {
     

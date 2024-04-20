@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/alert-callout.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
-import DOMPurify from 'dompurify';
+import DOMPurify from 'isomorphic-dompurify';
 
 const AlertCallout = ({ alertText }) => {
     
