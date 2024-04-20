@@ -12,6 +12,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 768px) {
+    #body {
+        margin: 0;
+        padding: 1rem 2rem;
+    }
+}
+
 #main-heading {
     color: #607274;
     font-size: clamp(1.75rem, 2vw, 3.125rem);
