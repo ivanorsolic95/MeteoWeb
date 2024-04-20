@@ -6,7 +6,6 @@ import CheckOledLib from '../images/checkoledlib.png'
 import TipCallout from '../components/TipCallout'
 import TestDisplay from '../images/testdisplay.png'
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
 import mediumZoom from 'medium-zoom';
 
 const Oled = () => {
@@ -55,7 +54,7 @@ oled.show()`;
                 />
                 <h2>Showing text on display </h2>
 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeBlock}
                 </SyntaxHighlighter>
 

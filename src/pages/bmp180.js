@@ -6,7 +6,6 @@ import SensorAddress from "../images/sensoraddress.png";
 import Bmp180Lib from "../images/BMP180lib.png";
 import Bmp180Test from "../images/bmp180test.png";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
 import mediumZoom from 'medium-zoom';
 
 
@@ -47,16 +46,16 @@ bmp.altitude #in the next line, you should see the measured altitude`;
                 <h2>Testing BMP180 sensor</h2>
                 <section class="text">
                     <p>Download the <a href="https://github.com/robert-hh/BMP085_BMP180/blob/master/bmp085.py">BMP180 library</a> for the sensor. Before uploading the library to the microcontroller, take a look at <a href="https://github.com/robert-hh/BMP085_BMP180/blob/de8aeb4c849979ae865ed2214507c252eb36026e/bmp085.py#L55">line 55</a> of the library.</p>
-                    <SyntaxHighlighter language="python" style={white} showLineNumbers>self._bmp_addr = 119  # fix</SyntaxHighlighter>
+                    <SyntaxHighlighter language="python" showLineNumbers>self._bmp_addr = 119  # fix</SyntaxHighlighter>
                     <p>119 is the sensor’s address on the microcontroller. This address is very important, as it allows the microcontroller to communicate specifically with that sensor, which is key when you need to read data from the sensor or send him commands on how to behave.</p>
                     <p>Your sensor’s address on your microcontroller can differ from this one, so do the following to check the address:</p>
                     <ul id="list">
                         <li>Using MobaXTerm, connect to the microcontroller.</li>
                         <li>In the command prompt that appears after the connection, run the following commands, one by one:
                             <ul>
-                                <li><SyntaxHighlighter language="python" style={white}>import machine</SyntaxHighlighter></li>
-                                <li><SyntaxHighlighter language="python" style={white}>bmp180 = machine.SoftI2C(sda=machine.Pin(21), scl=machine.Pin(22))</SyntaxHighlighter></li>
-                                <li><SyntaxHighlighter language="python" style={white}>bmp180.scan()</SyntaxHighlighter></li>
+                                <li><SyntaxHighlighter language="python">import machine</SyntaxHighlighter></li>
+                                <li><SyntaxHighlighter language="python">bmp180 = machine.SoftI2C(sda=machine.Pin(21), scl=machine.Pin(22))</SyntaxHighlighter></li>
+                                <li><SyntaxHighlighter language="python">bmp180.scan()</SyntaxHighlighter></li>
                             </ul>
                         </li>
                     </ul>
@@ -82,7 +81,7 @@ bmp.altitude #in the next line, you should see the measured altitude`;
                     To test if sensor is working, connect to the microcontroller again and run the following commands in the terminal:
                 </p>
    
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeBlock}
                 </SyntaxHighlighter>
 

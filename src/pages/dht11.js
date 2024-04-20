@@ -7,7 +7,6 @@ import Breadboard2 from '../images/breadboard2.jpg'
 import DHTWiringSchema from '../images/DHT11-schema.jpg'
 import DHTCodeTest from '../images/dht11codetesting.png'
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
 import mediumZoom from 'medium-zoom';
 
 
@@ -81,7 +80,7 @@ d.humidity() #you should see the humidity as the output of this function `;
                     <br/>To test if sensor is working, connect to the microcontroller and run the following commands in the terminal:
                 </p>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeBlock}
                 </SyntaxHighlighter>
                 

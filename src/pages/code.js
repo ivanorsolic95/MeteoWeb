@@ -4,7 +4,6 @@ import TipCallout from "../components/TipCallout";
 import InfoCallout from "../components/InfoCallout";
 import WeatherStation from "../images/weatherstationinwork.png";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
 import mediumZoom from 'medium-zoom';
 
 
@@ -176,7 +175,7 @@ self.setResetPin()`;
                     </p>
                 </section>
                 
-               <SyntaxHighlighter language="python" style={white} showLineNumbers>
+               <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString}
                </SyntaxHighlighter>
                 
@@ -184,7 +183,7 @@ self.setResetPin()`;
                     Next thing is to define the <i>‘Microcontroller’</i> class. Classes are blueprints for creating objects with certain properties and behaviors in Python.
                 </p>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString2}
                 </SyntaxHighlighter>
                 
@@ -192,13 +191,13 @@ self.setResetPin()`;
                     This method is a special method called the constructor. It's automatically called when you create a new instance of the <i>‘Microcontroller’</i> class. <br/>It takes two parameters: SSID (the name of the WiFi network) and KEY (the WiFi password).
                 </p>
     
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>def __init__(self, SSID, KEY):</SyntaxHighlighter>
+                <SyntaxHighlighter language="python" showLineNumbers>def __init__(self, SSID, KEY):</SyntaxHighlighter>
     
                 <p className="text">
                     These lines store the values of SSID and KEY passed to the constructor as attributes of the Microcontroller object.
                 </p>
     
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString18}              
                 </SyntaxHighlighter>
                 
@@ -207,11 +206,11 @@ self.setResetPin()`;
                     This line sets up a way for our microcontroller to connect to the internet through a WiFi network.
                 </p>
     
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>self.sta_if = network.WLAN(network.STA_IF)</SyntaxHighlighter>
+                <SyntaxHighlighter language="python" showLineNumbers>self.sta_if = network.WLAN(network.STA_IF)</SyntaxHighlighter>
     
                 <p className="text">At the end we are calling three methods:</p>
     
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString19}
                 </SyntaxHighlighter>
                 
@@ -221,7 +220,7 @@ self.setResetPin()`;
                     <br/>the <b>setResetPin()</b> method sets a pin (Pin 4) to a high voltage level, which is necessary for an OLED display to work properly.
                 </p>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString3}
                 </SyntaxHighlighter>
                 
@@ -229,7 +228,7 @@ self.setResetPin()`;
                     The <b>connectedToWifi()</b> cheks if the microcontroller is connected to the WiFi. I will use this function inside the <b>connectToWifi()</b> method:
                 </p>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString4}
                 </SyntaxHighlighter>
 
@@ -237,7 +236,7 @@ self.setResetPin()`;
                     Here is the code for the <b>setTime()</b>:
                 </p>
 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString5}
                 </SyntaxHighlighter>
                 
@@ -245,7 +244,7 @@ self.setResetPin()`;
                     and the <b>setResetPin()</b>:
                 </p>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString6}
                 </SyntaxHighlighter>
                 
@@ -253,7 +252,7 @@ self.setResetPin()`;
                     The next script is <b><i>boot.py</i></b>, a script that will run first when the microcontroller starts up. Before the main code starts to run, we need to configure our microcontroller, and that’s the role of the boot.py script. This can be a lot of things, but in our case, it means that before anything else, we want our microcontroller to connect to the WiFi, and then set the current time and reset the pin to HIGH so the OLED can work. 
                 </p>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString7}
                 </SyntaxHighlighter>
                 
@@ -313,7 +312,7 @@ self.setResetPin()`;
                     </p>
                 </section>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString8}
                 </SyntaxHighlighter>
                 
@@ -322,15 +321,15 @@ self.setResetPin()`;
                     <p>
                         First I define the function <b><i>‘sendData’</i></b> that takes one parameter, <b>‘payload’</b>, which is the data to be sent to IFTTT.
                     </p>
-                    <SyntaxHighlighter language="python" style={white} showLineNumbers>def sendData(payload):</SyntaxHighlighter>
+                    <SyntaxHighlighter language="python" showLineNumbers>def sendData(payload):</SyntaxHighlighter>
                     <p>
                         Then create a dictionary named <b>‘headers’</b> that specifies the content type of the data being sent as JSON.
                     </p>
-                    <SyntaxHighlighter language="python" style={white} showLineNumbers>headers = ("Content-Type": "application/json")</SyntaxHighlighter>
+                    <SyntaxHighlighter language="python" showLineNumbers>headers = ("Content-Type": "application/json")</SyntaxHighlighter>
                     <p>This snippet of code checks if the <b>‘payload’</b> is empty or None. If it is, the function prints a message indicating that the payload is empty and returns, indicating that no data should be sent.</p>
                 </section>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString9}    
                 </SyntaxHighlighter>    
                 
@@ -345,7 +344,7 @@ self.setResetPin()`;
                     </ul>
                 </section>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString10}
                 </SyntaxHighlighter>
                 
@@ -353,13 +352,13 @@ self.setResetPin()`;
                     This checks the HTTP response status code returned by IFTTT. If the status code is 200 (indicating success), it prints a success message. Otherwise, it prints a failure message along with the status code.
                 </p>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString11}
                 </SyntaxHighlighter>
 
                 <p className="text">At the end of of the script, we will close the HTTP response object to free up resources.</p>
     
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>response.close()</SyntaxHighlighter>
+                <SyntaxHighlighter language="python" showLineNumbers>response.close()</SyntaxHighlighter>
 
                 <h2>Collecting data from the sensors</h2>
     
@@ -369,7 +368,7 @@ self.setResetPin()`;
                     <br/>All of this will be defined in the <b><i>sensors.py</i></b> script, so take a look at the snippets of code and its explanation. 
                 </p>
 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString12}
                 </SyntaxHighlighter>
 
@@ -383,7 +382,7 @@ self.setResetPin()`;
                     <br/>Now we will define the three classes, each representing one sensor. The first one is the class <i>“DHT11”</i>. 
                 </p>
     
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString13}
                 </SyntaxHighlighter>
     
@@ -417,7 +416,7 @@ self.setResetPin()`;
                     </ul>
                 </section>
     
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString14}
                 </SyntaxHighlighter>
     
@@ -427,7 +426,7 @@ self.setResetPin()`;
                     <p>The last class represents the MQ135 sensor, used to measure the concentration of CO2, expressed in PPM.</p>
                 </section>
                 
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString15}
                 </SyntaxHighlighter>
      
@@ -448,7 +447,7 @@ self.setResetPin()`;
                     </ul>
                 </section>
      
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString16}
                 </SyntaxHighlighter>
      
@@ -492,7 +491,7 @@ self.setResetPin()`;
                     </p>
                 </section>
      
-                <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                <SyntaxHighlighter language="python" showLineNumbers>
                     {codeString17}
                 </SyntaxHighlighter>
     

@@ -5,7 +5,6 @@ import MQ135Lib from "../images/mq135lib.png";
 import InfoCallout from "../components/InfoCallout";
 import MQ135Testing from "../images/mq135testing.png"
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { white} from "react-syntax-highlighter/dist/esm/styles/hljs";
 import mediumZoom from 'medium-zoom';
 
 const Mq135 = () => {
@@ -59,7 +58,7 @@ mq135.get_corrected_ppm(temperature, humidity)`;
                         In the terminal that is visible after the establishment of the connection, run the following commands:
                     </p>
            
-                    <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                    <SyntaxHighlighter language="python" showLineNumbers>
                         {codeBlock}
                     </SyntaxHighlighter>
 
@@ -74,7 +73,7 @@ mq135.get_corrected_ppm(temperature, humidity)`;
                         To have a more precise measurement of the air quality, we will provide the temperature and the humidity, measured by the DHT11 sensor, to our air quality sensor.
                     </p>
               
-                    <SyntaxHighlighter language="python" style={white} showLineNumbers>
+                    <SyntaxHighlighter language="python" showLineNumbers>
                         {codeBlock1}
                     </SyntaxHighlighter>
 
