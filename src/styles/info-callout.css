@@ -15,7 +15,7 @@
 }
 
 .notice-text {
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     color: #EEEDEB;
     line-height: 1;
 }
@@ -31,5 +31,5 @@
     padding: 0.625rem 0.313rem;
     color: #607274;
     flex-grow: 1;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2vw, 1.125rem);
 }

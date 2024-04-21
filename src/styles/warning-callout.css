@@ -14,7 +14,7 @@
 }
 
 .warning-text {
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     color: #EEEDEB;
     line-height: 1;
 }
@@ -24,7 +24,7 @@
     padding: 0.625rem 0.313rem;
     color: #EEEDEB;
     flex-grow: 1;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 .fa-circle-exclamation {
