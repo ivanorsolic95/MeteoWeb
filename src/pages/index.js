@@ -8,7 +8,7 @@ import mediumZoom from 'medium-zoom';
 const mainHeader = "Build your own weather station!"
 const infoText = "Don't worry, I will explain what the microcontroller is, why you need it, what type of sensors you need, and where to buy them."
 
-const IndexPage = () => {
+const HomePage = () => {
   useEffect(() => {
     const zoom = mediumZoom('[data-zoomable]', { margin: 0, scrollOffset: 0 });
     return () => zoom.detach();
@@ -37,6 +37,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default HomePage
 
 export const Head = () => <title>Home Page</title>
