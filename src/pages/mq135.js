@@ -19,7 +19,7 @@ from dht import DHT11
 mq135 = MQ135(Pin(36)) - #If you connected sensor’s AO pin with the different microcontroller’s ADC pin, change the number of pin inside the brackets with this pin.
 mq135.get_rzero() - #Call this function continuously for a couple of minutes to calibrate the sensor, otherwise it won't work properly.`;
 
-    const codeBlock1 = `dht_sensor = DHT11(Pin(18)) - #remember to which GPI pin of the microcontroller you connected DHT11’s DATA pin
+    const codeBlock1 = `dht_sensor = DHT11(Pin(16)) - #remember to which GPI pin of the microcontroller you connected DHT11’s DATA pin
 dht_sensor.measure()
 temperature, humidity = dht_sensor.temperature(), dht_sensor.humidity()
 mq135.get_corrected_ppm(temperature, humidity)`;
