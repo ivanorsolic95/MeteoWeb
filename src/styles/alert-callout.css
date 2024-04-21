@@ -14,7 +14,7 @@
 }
 
 .alert-text {
-    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-size: 1.125rem;
     color: #607274;
     line-height: 1;
 }
@@ -24,11 +24,20 @@
     padding: 0.625rem 0.313rem;
     color: #607274;
     flex-grow: 1;
-    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-size: 1.125rem;
 }
 
 .fa-triangle-exclamation {
     font-size: 1.125rem;
     margin-right: 0.625rem;
     color: #DAA520;
+}
+
+@media (max-width:768px) {
+    .alert-text {
+        font-size: 1rem;
+    }
+    .alert-callout-text {
+        font-size: 1rem;
+    }
 }
