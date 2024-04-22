@@ -10,6 +10,7 @@
     padding: 3rem 6rem;
     line-height: 2.5rem;
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
 }
 
 @media (max-width: 768px) {
