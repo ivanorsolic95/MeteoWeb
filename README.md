@@ -4,6 +4,8 @@ This tutorial is designed for enthusiasts with a basic knowledge of Python progr
 
 It includes everything you need, from components to build a weather station, wiring diagrams to connect the components, and code to run your weather station.
 
+I made a separate [repository](https://github.com/ivanorsolic95/MeteoLogic), where I put complete Python code for running the weather station.
+
 Check out the tutorial on [meteoweb](https://meteoweb.netlify.app/).
 
 ## Why I wrote this tutorial?
