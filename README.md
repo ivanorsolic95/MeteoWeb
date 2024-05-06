@@ -8,6 +8,8 @@ I made a separate [repository](https://github.com/ivanorsolic95/MeteoLogic), whe
 
 Check out the tutorial on [meteoweb](https://meteoweb.netlify.app/).
 
+![Weather station](/src/images/weatherstation.jpg)
+
 ## Why I wrote this tutorial?
 
 As a newcomer to programming and embedded systems, I was eager to gain practical experience. The idea of building a weather station caught my interest because it seemed like a feasible project with affordable components and beginner-friendly Python programming.
