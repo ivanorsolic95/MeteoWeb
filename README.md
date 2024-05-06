@@ -1,4 +1,4 @@
-#A tutorial to build your own weather station
+# A tutorial to build your own weather station
 
 This tutorial is designed for enthusiasts with a basic knowledge of Python programming. No prior experience with electronics is required, making it accessible to beginners and seasoned programmers alike.
 
