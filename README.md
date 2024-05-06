@@ -1,49 +1,29 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# A tutorial to build your own weather station
 
-## 🚀 Quick start
+This tutorial is designed for enthusiasts with a basic knowledge of Python programming. No prior experience with electronics is required, making it accessible to beginners and seasoned programmers alike.
 
-1.  **Create a Gatsby site.**
+It includes everything you need, from components to build a weather station, wiring diagrams to connect the components, and code to run your weather station.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+I made a separate [repository](https://github.com/ivanorsolic95/MeteoLogic), where I put complete Python code for running the weather station.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+Check out the tutorial on [meteoweb](https://meteoweb.netlify.app/).
 
-2.  **Start developing.**
+![Weather station](/src/images/weatherstation.jpg)
 
-    Navigate into your new site’s directory and start it up.
+## Why I wrote this tutorial?
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+As a newcomer to programming and embedded systems, I was eager to gain practical experience. The idea of building a weather station caught my interest because it seemed like a feasible project with affordable components and beginner-friendly Python programming.
 
-3.  **Open the code and start customizing!**
+After successfully completing my weather station, I wanted to share my journey with others. Thus, this tutorial was created.
 
-    Your site is now running at http://localhost:8000!
+Motivation behind the tutorial:
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+  - Hands-on Learning: Constructing the weather station provided me with valuable experience in both Python programming and working with hardware.
 
-4.  **Learn more**
+  - Accessibility and Affordability: The project's low cost and simplicity in Python made it accessible to beginners like myself who are interested in exploring embedded systems.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+  - Comprehensive Instructions: I wanted to create a tutorial that offers complete instructions, sparing others the need to search through several sources to build a simple weather station.
 
-## 🚀 Quick start (Netlify)
+  - Improving Web Development Skills: Equally important was the opportunity to enhance my web development skills. By crafting this tutorial as a website using React Gatsby, I aimed to improve my abilities in web development while sharing my knowledge.
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+I hope this tutorial serves as a helpful resource for beginners looking to delve into the world of programming and embedded systems.
