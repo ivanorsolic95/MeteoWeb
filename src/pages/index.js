@@ -4,6 +4,10 @@ import InfoCallout from "../components/InfoCallout"
 import WeatherStation from '../images/weatherstation.jpg'
 import Footer from "../components/Footer"
 import mediumZoom from 'medium-zoom';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+
+config.autoAddCss = false;
 
 const mainHeader = "Build your own weather station!"
 const infoText = "Don't worry, I will explain what the microcontroller is, why you need it, what type of sensors you need, and where to buy them."
