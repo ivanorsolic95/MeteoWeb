@@ -5,3 +5,21 @@ This tutorial is designed for enthusiasts with a basic knowledge of Python progr
 It includes everything you need, from components to build a weather station, wiring diagrams to connect the components, and code to run your weather station.
 
 Check out the tutorial on [meteoweb](https://meteoweb.netlify.app/).
+
+## Why I wrote this tutorial?
+
+As a newcomer to programming and embedded systems, I was eager to gain practical experience. The idea of building a weather station caught my interest because it seemed like a feasible project with affordable components and beginner-friendly Python programming.
+
+After successfully completing my weather station, I wanted to share my journey with others. Thus, this tutorial was created.
+
+Motivation behind the tutorial:
+
+  1.Hands-on Learning: Constructing the weather station provided me with valuable experience in both Python programming and working with hardware.
+
+  2.Accessibility and Affordability: The project's low cost and simplicity in Python made it accessible to beginners like myself who are interested in exploring embedded systems.
+
+  3.Comprehensive Instructions: I wanted to create a tutorial that offers complete instructions, sparing others the need to search through several sources to build a simple weather station.
+
+  4.Improving Web Development Skills: Equally important was the opportunity to enhance my web development skills. By crafting this tutorial as a website using React Gatsby, I aimed to improve my abilities in web development while sharing my knowledge.
+
+I hope this tutorial serves as a helpful resource for beginners looking to delve into the world of programming and embedded systems.
