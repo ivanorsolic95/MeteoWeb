@@ -14,12 +14,12 @@ After successfully completing my weather station, I wanted to share my journey w
 
 Motivation behind the tutorial:
 
-  1.Hands-on Learning: Constructing the weather station provided me with valuable experience in both Python programming and working with hardware.
+  - Hands-on Learning: Constructing the weather station provided me with valuable experience in both Python programming and working with hardware.
 
-  2.Accessibility and Affordability: The project's low cost and simplicity in Python made it accessible to beginners like myself who are interested in exploring embedded systems.
+  - Accessibility and Affordability: The project's low cost and simplicity in Python made it accessible to beginners like myself who are interested in exploring embedded systems.
 
-  3.Comprehensive Instructions: I wanted to create a tutorial that offers complete instructions, sparing others the need to search through several sources to build a simple weather station.
+  - Comprehensive Instructions: I wanted to create a tutorial that offers complete instructions, sparing others the need to search through several sources to build a simple weather station.
 
-  4.Improving Web Development Skills: Equally important was the opportunity to enhance my web development skills. By crafting this tutorial as a website using React Gatsby, I aimed to improve my abilities in web development while sharing my knowledge.
+  - Improving Web Development Skills: Equally important was the opportunity to enhance my web development skills. By crafting this tutorial as a website using React Gatsby, I aimed to improve my abilities in web development while sharing my knowledge.
 
 I hope this tutorial serves as a helpful resource for beginners looking to delve into the world of programming and embedded systems.
