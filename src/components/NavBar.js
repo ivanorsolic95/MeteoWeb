@@ -19,7 +19,7 @@ const NavBar = () => {
     }, []);
 
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900">
+        <nav className='navbar-container'>
             {!isMobile && (
              <div className="navbar-grid-container">
                   <ul class="nav flex-column">

@@ -16,3 +16,8 @@
 .nav-link:hover {
     color: #A9A9A9 !important;
 }
+
+.navbar-container {
+    border-color: #E5E7EB; 
+    background-color: #111827; 
+}
