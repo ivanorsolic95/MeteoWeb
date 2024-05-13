@@ -21,3 +21,16 @@
     border-color: #E5E7EB; 
     background-color: #111827; 
 }
+
+/*mobile screen*/
+
+.navbar-flex-container {
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;  
+}
