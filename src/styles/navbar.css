@@ -55,3 +55,12 @@
     flex-direction: column;
     margin-top: 1rem;
 }
+
+.navbar-link {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    color: #cfd3de; 
+}

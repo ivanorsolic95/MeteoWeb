@@ -69,34 +69,34 @@ const NavBar = () => {
                     <div className={`${isOpen ? '' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
                     <ul className="navbar-list">
                         <li>
-                        <Link to='/' className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</Link>
+                        <Link to='/' className="navbar-link" aria-current="page">Home</Link>
                         </li>
                         <li>
-                        <Link to='/hardware/' className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Hardware</Link>
+                        <Link to='/hardware/' className="navbar-link" aria-current="page">Hardware</Link>
                         </li>
                         <li>
-                        <Link to='/configuration/' className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Configuration</Link>
+                        <Link to='/configuration/' className="navbar-link">Configuration</Link>
                         </li>
                         <li>
-                        <Link to='/tools/' className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tools</Link>
+                        <Link to='/tools/' className="navbar-link">Tools</Link>
                         </li>
                         <li>
-                        <Link to='/oled/' className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">OLED</Link>
+                        <Link to='/oled/' className="navbar-link">OLED</Link>
                         </li>
                         <li>
-                        <Link to='/dht11/' className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">DHT11</Link>
+                        <Link to='/dht11/' className="navbar-link">DHT11</Link>
                         </li>
                         <li>
-                        <Link to='/bmp180/' className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">BMP180</Link>
+                        <Link to='/bmp180/' className="navbar-link">BMP180</Link>
                         </li>
                         <li>
-                        <Link to='/mq135/' className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">MQ135</Link>
+                        <Link to='/mq135/' className="navbar-link">MQ135</Link>
                         </li>
                         <li>
-                        <Link to='/code/' className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Code</Link>
+                        <Link to='/code/' className="navbar-link">Code</Link>
                         </li>
                         <li>
-                        <Link to='/demo/' className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Demo</Link>
+                        <Link to='/demo/' className="navbar-link">Demo</Link>
                         </li>
 
                     </ul>
