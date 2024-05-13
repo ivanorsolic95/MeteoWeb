@@ -7,6 +7,8 @@ import DeviceManager from "../images/devicemanager.png"
 import PortProperties from "../images/portproperties.png"
 import Port from "../images/port.jpg"
 import mediumZoom from 'medium-zoom';
+import Title from "../components/Title";
+
 
 const Configuration = () => {
     useEffect(() => {
@@ -90,4 +92,7 @@ const Configuration = () => {
 
 export default Configuration;
 
-export const Head = () => <title>Configuration</title>
+export const Head = () => (
+    <Title/>
+)
+

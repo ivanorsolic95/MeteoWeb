@@ -8,6 +8,7 @@ import DHTWiringSchema from '../images/DHT11-schema.jpg'
 import DHTCodeTest from '../images/dht11codetesting.png'
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import mediumZoom from 'medium-zoom';
+import Title from "../components/Title";
 
 
 const Dht11 = () => {
@@ -97,4 +98,7 @@ d.humidity() #you should see the humidity as the output of this function `;
 
 export default Dht11;
 
-export const Head = () => <title>DHT11</title>
+export const Head = () => (
+    <Title/>
+)
+

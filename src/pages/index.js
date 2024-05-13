@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import mediumZoom from 'medium-zoom';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import Title from "../components/Title";
 
 config.autoAddCss = false;
 
@@ -43,4 +44,6 @@ const HomePage = () => {
 
 export default HomePage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+  <Title/>
+)

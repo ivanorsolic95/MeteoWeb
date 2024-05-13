@@ -6,6 +6,7 @@ import InfoCallout from "../components/InfoCallout";
 import MQ135Testing from "../images/mq135testing.png"
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import mediumZoom from 'medium-zoom';
+import Title from "../components/Title";
 
 const Mq135 = () => {
     useEffect(() => {
@@ -97,4 +98,7 @@ mq135.get_corrected_ppm(temperature, humidity)`;
 
 export default Mq135;
 
-export const Head = () => <title>MQ135</title>
+export const Head = () => (
+    <Title/>
+)
+  

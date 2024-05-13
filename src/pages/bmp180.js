@@ -7,7 +7,7 @@ import Bmp180Lib from "../images/BMP180lib.png";
 import Bmp180Test from "../images/bmp180test.png";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import mediumZoom from 'medium-zoom';
-
+import Title from "../components/Title";
 
 const Bmp180 = () => {
     useEffect(() => {
@@ -101,4 +101,6 @@ bmp.altitude #in the next line, you should see the measured altitude`;
 
 export default Bmp180;
 
-export const Head = () => <title>BMP180</title>
+export const Head = () => (
+    <Title/>
+)

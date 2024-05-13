@@ -9,6 +9,7 @@ import Adafruit from '../images/adafruit.png'
 import MobaXTerm from '../images/mobaxterm.png'
 import MobaXTermTest from '../images/mobaxtermtest.png'
 import mediumZoom from 'medium-zoom';
+import Title from "../components/Title";
 
 const Tools = () => {
     useEffect(() => {
@@ -121,4 +122,6 @@ const Tools = () => {
 
 export default Tools;
 
-export const Head = () => <title>Tools</title>
+export const Head = () => (
+    <Title/>
+)

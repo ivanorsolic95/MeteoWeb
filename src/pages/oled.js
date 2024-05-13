@@ -7,6 +7,7 @@ import TipCallout from '../components/TipCallout'
 import TestDisplay from '../images/testdisplay.png'
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import mediumZoom from 'medium-zoom';
+import Title from "../components/Title";
 
 const Oled = () => {
     useEffect(() => {
@@ -72,3 +73,7 @@ oled.show()`;
 };
 
 export default Oled;
+
+export const Head = () => (
+    <Title/>
+)

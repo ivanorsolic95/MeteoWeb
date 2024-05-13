@@ -5,7 +5,7 @@ import InfoCallout from "../components/InfoCallout";
 import WeatherStation from "../images/weatherstationinwork.png";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import mediumZoom from 'medium-zoom';
-
+import Title from "../components/Title";
 
 const Code = () => {
     useEffect(() => {
@@ -544,4 +544,6 @@ self.setResetPin()`;
 
 export default Code;
 
-export const Head = () => <title>CodeExplanation</title>
+export const Head = () => (
+    <Title/>
+)

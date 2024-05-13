@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import mediumZoom from 'medium-zoom';
 import MeteoStation from '../images/Demo.jpg'
+import Title from "../components/Title";
+
 
 const Demo = () => {
     useEffect(() => {
@@ -30,4 +32,7 @@ const Demo = () => {
 
 export default Demo;
 
-export const Head = () => <title>Demo</title>
+export const Head = () => (
+    <Title/>
+)
+

@@ -11,6 +11,7 @@ import BMP180 from '../images/BMP180.jpg'
 import AirPressure from '../images/AirPressure.jpg'
 import WarningCallout from '../components/WarningCallout'
 import MQ135 from '../images/MQ135.jpg'
+import Title from "../components/Title";
 
 const Hardware = () => {
     const tipText = "If you’re a complete beginner in the area of hardware and embedded systems, I would recommend to buy the same components as me."
@@ -150,4 +151,6 @@ const Hardware = () => {
 
 export default Hardware;
 
-export const Head = () => <title>Hardware</title>
+export const Head = () => (
+    <Title/>
+)
