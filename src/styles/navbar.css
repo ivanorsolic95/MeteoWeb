@@ -47,3 +47,11 @@
     color: #6B7280;
     border-radius: 0.5rem;        
 }
+
+.navbar-list {
+    font-weight: 500;
+    display: flex; 
+    padding: 1rem; 
+    flex-direction: column;
+    margin-top: 1rem;
+}
