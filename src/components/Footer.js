@@ -57,20 +57,20 @@ const navigation = {
     return (
       <footer className="footer">
         <div className="footer-container">
-          <nav className="-mb-6 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
-            <div className="pb-6">
+          <nav className="nav-container" aria-label="Footer">
+            <div className="text-wrapper">
                 <p className="text">Hello, my name is Ivan and I made this tutorial to help you build your own weather station. If you have any question, feel free to ping me.</p>
             </div>
           </nav>
-          <div className="mt-10 flex justify-center space-x-10">
+          <div className="links-wrapper">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+              <a key={item.name} href={item.href} className="social-link">
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
+                <item.icon className="icon" aria-hidden="true" />
               </a>
             ))}
           </div>
-          <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+          <p className="copyright-text">
             &copy; Ivan Orsolic. All rights reserved.
           </p>
         </div>
