@@ -56,7 +56,7 @@ const navigation = {
   export default function Footer() {
     return (
       <footer className="footer">
-        <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+        <div className="footer-container">
           <nav className="-mb-6 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
             <div className="pb-6">
                 <p className="text">Hello, my name is Ivan and I made this tutorial to help you build your own weather station. If you have any question, feel free to ping me.</p>
